@@ -1,0 +1,40 @@
+title: Education
+list:    
+  -
+    period: 2010--2014
+    title: PhD in computational neuroscience
+    company: Imperial College London, UK, Department of Bioengineering
+    location: London, UK
+    description: |-
+      Understanding the molecular engineering design principles of neural
+      circuits, supervisor: Dr. Aldo Faisal\\ I maintained and developed C++
+      libraries for stochastic simulation of ion channels and neural fibres
+      (Modigliani, available on github) and used it to investigate the impact of
+      biophysical constraints on the structure and function of nervous systems,
+      and the trade-offs between these constraints. My goal was to understand
+      the engineering design principles behind the architecture of nervous
+      systems, based on our knowledge of the design of human-made communication
+      networks.
+      
+  -
+    period: 2005--2008
+    title: Diplôme d`ingénieur
+    company: T\'el\'ecom Paristech
+    location: Paris, France
+    description: |-
+      I specialised in Computer science, Electrical engineering, Embedded
+      systems, Security
+  -
+    period: 2003--2005
+    title: Preparatory course for entrance exams to the "Grandes Écoles" of engineering
+    company: Lycée Henri IV
+    location: Paris, France
+    description: ""
+            
+  -
+    period: 2000--2003
+    title: Scientific baccalaureate
+    company: Lycée Pasteur
+    location: Neuilly sur Seine, France
+    description: |-
+      Mathematics specialisation

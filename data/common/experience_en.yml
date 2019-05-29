@@ -1,0 +1,90 @@
+title: Professional experience
+list:
+  -
+    period: Jul-Dec 2018
+    title: Data Science Consultant
+    company: Medicall
+    location: Paris, France
+    description: |-
+      Automated system for classifying emergency calls using the audio signal
+      according to their level of severity. My model used embeddings generated
+      by Tristounet (Bredin 2017) and fed into an LSTM network to classify audio
+      segments.
+  -  
+    period: Jan-June 2018
+    title: Data Science Consultant 
+    company: ELS
+    location: Paris, France
+    description: |-
+      I built a model for finding personal data and references to legal sources
+      in French documents for a leading law publication firm. The system
+      combined output from a model trained using spacy, regexps, and Heideltime
+      to achieve 0.95 accuracy. The model is deployed with a REST API using
+      Docker.
+  -
+    period: 2017-2019
+    title: Course author (\emph{Python Libraries for Data Science}), Consultant and Mentor
+    company: OpenClassrooms
+    location: Paris, France
+    description: |-
+      I authored a course on Data Science using Python librairies for
+      Openclassrooms. The French version was published in December 2017, and the
+      English version in January 2019. I also consult them on potential
+      improvement to the Data Science path (a collection of courses). Every
+      week, I mentor a few students of the Data Science path on their project.
+  -
+    period: Since 2016
+    title: Co-founder and director
+    company: Spike.AI
+    location: London, UK
+    description: |-
+      AI innovation consulting platform operating as a science hub, comprising
+      of computer and data specialists, engineers, neuroscientists and
+      clinicians that capitalizes on interdisciplinary scientific thinking to
+      address challenges at the interface of machine learning, big data and
+      intelligent systems in a wide range of private and public services.
+      Current and past portfolio includes product development and innovation
+      strategy consulting in healthcare analytics, retailing, tourism, sports
+      and insuretech.
+  -
+    period: 2016-2017
+    title: Founder and President
+    company: HireALab S.A.S.
+    location: Paris, France
+    description: |-
+      I developed Hoosup, a smartphone application to find people to share your
+      passion. Hoosup would allow anyone to advertise an imminent activity
+      (playing games, sports, studying, etc.) and to look for partners nearby.
+  -
+    period: 2015
+    title: Research associate
+    company: Institute of neurology, University College London
+    location: London, UK 
+    description: |-
+      I was part of a large project investigating the impact of mutations on
+      synapses in mammalian CNS. My role consisted in formulating novel
+      hypotheses based on models I developed during my PhD and testing them in
+      an experimental setting.
+  -
+    period: 2014 
+    title: Research associate
+    company: Department of Computing, Imperial College London
+    location: London, UK 
+    description: |-
+      This position was an opportunity to continue working on projects started
+      during my PhD. Notably: \begin{itemize} \item Comparative study of
+      metabolic cost and reliability of action potential transmission in
+      myelinated and unmyelinated axons using stochastic simulation. \item
+      Impact of channel noise on the waveform of action potentials and EPSPs
+      \item Homeostatic constraints on the function of neural fibres
+      \end{itemize}
+  -
+    period: 2008--2010 
+    title: IT Security consultant
+    company: Wavestone 
+    location: Paris, France
+    description: |-
+      Client infrastructure auditing and analysis. Project planning,
+      elaboration and implementation of IT security strategies for large
+      French companies.
+      

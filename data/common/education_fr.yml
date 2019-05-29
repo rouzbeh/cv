@@ -1,0 +1,36 @@
+title: Formation
+list:    
+  -
+    period: 2010--2014
+    title: Doctorat en neurosciences computationnelles
+    company: Imperial College London, UK, Department of Bioengineering
+    location: London, UK
+    description: |-
+      "Engineering design principles of neural fibres", dirigée par Dr. Aldo
+      Faisal.\newline Je me suis intéressé pendant ma thèse aux principes de
+      design des circuits nerveux et comment ils réconcilient les contraintes
+      bio-physiques auxquelles ils sont sujets. À cette fin, j’ai développé des
+      logiciels pour des simulations stochastiques de canaux ioniques
+      (Modigliani).
+      
+  -
+    period: 2005--2008
+    title: Diplôme d`ingénieur
+    company: T\'el\'ecom Paristech
+    location: Paris, France
+    description: |-
+      Je me suis spécialisé dans la programmation et la théorie de
+      l’informatique, l’électronique et les systèmes embarqués.
+  -
+    period: 2003--2005
+    title: Classes préparatoires MPSI/MP*
+    company: Lycée Henri IV
+    location: Paris, France
+    description: ""
+            
+  -
+    period: 2000--2003
+    title: Baccalauréat scientifique, Spécialité mathématiques
+    company: Lycée Pasteur
+    location: Neuilly sur Seine, France
+    description:  ""

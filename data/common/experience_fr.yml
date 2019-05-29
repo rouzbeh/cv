@@ -1,0 +1,113 @@
+title: Expérience professionnelle
+list:
+  -
+    period: 2017--présent
+    title: Consultant en Data Science
+    company: Freelance
+    location: Paris, France
+    description: |-
+      \begin{itemize} \item \emph{Editions Lefebvre Sarrut} J'ai créé un modèle
+      capable de détecter les références juridiques et les données personnelles
+      dans des documents légaux. Le modèle se base sur la librairie Spacy et est
+      capable de détecter les noms, adresses, numéro de téléphones, identifiants
+      etc. \item \emph{Medicall} J'ai développé un système de classification de
+      niveaux d'urgence d'appels vers SOS Médecin en se basant sur les données
+      audio. Le modèle utilise un réseau de neurones (LSTM) pour calculer des
+      embeddings, qui sont ensuite utilisés dans un réseau de neurones
+      récurrents pour classifier les appels.\item \emph{OpenClassrooms} J'ai
+      créé le MOOC "Les librairies Python pour la Data Science". Ce cours fait
+      partie à la fois du parcous Data Scientist et du parcours Data Architect.
+      Par la suite, j'ai conseillé OpenClassrooms sur les évolutions à apporter
+      à ce parcours et j'interviens en tant que mentor après de plusieurs
+      étudiants du parcours.\item \emph{VivaData} Formateur en traitement du
+      langage naturel.\end{itemize}
+      
+  -
+    period: 2016--Présent
+    title: Co-fondateur et directeur
+    company: Spike.AI
+    location: London, UK
+    description: |-
+      Spike est une plateforme de conseil en data science, spécialisée dans les
+      PoC. Nous avons créé:\begin{itemize}\item Une système de recommendation de
+      vêtements en fonction des goûts et de la corpulence de l'utilisateur.\item
+      Un classificateur de dommage sur les voitures à partir de photos prises
+      par les utilisateurs, à destination des compagnies d'assurance.\item
+      Optimisation des essais cliniques pour une entreprise
+      pharmaceutique.\end{itemize}
+  -
+    period: 2015--2016
+    title: Post-doctorant (Research associate)
+    company: Institute of neurology, University College London
+    location: London, UK 
+    description: |
+      J'ai élaboré un classificateur automatique de traces EEG en différents
+      états épileptiques. J’ai développé une application web pour mesurer les
+      performances d’experts humains. En parallèle, je me suis intéressé aux
+      mutations des canaux ioniques et leur impact sur la transmission
+      synaptique. En utilisant un microscope à balayage éléctronique, j’ai
+      entrepris des rechercehs sur les potentiels d’action dans les boutons. En
+      analysant comment la forme de ces potentiels d’action change chez les
+      souris transgéniques, nous pouvons mieux comprendre l’impact de gênes
+      mutants.
+  -
+    title: Chargé de TD pour \emph{Python for scientists}
+    period: 2013
+    company: Department of Bioengineering, Imperial College London, UK
+    description: |-
+      Cours de Master,  
+  -
+    title: Chargé de TD pour \emph{Modelling in biology}
+    period: 2011--2013
+    company: Department of Bioengineering, Imperial College London, UK
+    description: |-
+      Cours de troisième année
+  -
+    title: Chargé de TD pour \emph{Machine learning and neural computation}
+    period: 2010--2013
+    company: Department of Computing, Imperial College London, UK
+    description: |-
+      Cours de Master
+  -
+    period: 2014 
+    title: Post-doctorant (Research associate)
+    company: Department of Computing, Imperial College London
+    location: London, UK 
+    description: |-
+      Ce post-doctorat était une opportunité pour moi de continuer certaines
+      investigations entreprises durant ma thèse. En particulier
+      :\begin{itemize} \item L’étude comparative du coût métabolique et de la
+      fiabilité de la propagation des potentiels d’action entre les axons
+      myelinés et non-myélinés en utilisant des simulations stochastiques. \item
+      L’impact de l’ouverture aléatoire des canaux ioniques sur la forme des
+      potentiels d’action et les potentiels post-synaptiques.\item Les
+      contraintes homéostatiques sur la fonctions des fibres
+      nerveuses.\end{itemize}
+  -
+    period: 2008--2010 
+    title: Consultant
+    company: Wavestone 
+    location: Paris, France
+    description: |-
+      Audit et analyse des infrastructures des clients. Planning de projets,
+      élaboration et implémentation des stratégies de sécurité des SI pour de
+      grandes entreprises françaises (Suez, Arval, PPR, etc.)
+  -
+    period: 2007--2008
+    title: Développeur C++
+    company: ANEO
+    location: Paris, France
+    description: |-
+      Développement d’un outil de monitoring de performances réseau à
+      destination d’institutions financières. J’étais en charge de l’analyse de
+      protocoles réseau propriétaires et l’écriture de plugins pour les
+      analyser. J’ai aussi été amené à analyser en détails les solutions
+      d’horodatages sous Windows.
+  -
+    period: 2006
+    title: Développeur PHP
+    company: Quod Financial - Net2S
+    location: Paris, France
+    description: |-
+      Développement web d’outils de gestion de tâches et de bug tracking.
+      

@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com), Harsh (harsh.gadgil@gmail.com) and johayon
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~ 
+	\smartdiagram[bubble diagram]{
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Visualization},
+				\textbf{~~~Deep~~~}\\\textbf{Learning},
+        \textbf{~~~~~~~~Big~~~~~~~~}\\\textbf{Data},
+        \textbf{Statistical}\\\textbf{Analysis},
+				\textbf{Data}\\\textbf{Wrangling}
+    }
+}
+
+% Programming skill bars
+%\programming{ { Java $\textbullet$ MatLab $\textbullet$ Maple/ 3}, {Scala $\textbullet$ R %$\textbullet$ Spark $\textbullet$ \LaTeX/ 4}, {Python $\textbullet$ SQL/ 5}}
+
+\tools{
+\tikzset{
+  every shadow/.style={
+    fill=none,
+    shadow xshift=0pt,
+    shadow yshift=0pt}
+}
+\hspace{-1.0cm}
+\definecolor{pblue}{HTML}{0395DE}
+\smartdiagramset{set color list = {pblue,pblue,pblue,pblue,pblue,pblue,pblue}}
+\smartdiagram[descriptive diagram]{
+{\large \faFlask,{Sklearn Xgboost Caret RandomForest TensorFlow Keras NLTK Gensim Forecast Pandas Numpy}},
+{\large \mfHadoop, {Spark Mllib GraphX Sparksql Zeppelin Livy}}, 
+{\large \faDatabase,{MySql Elastic-Search Hbase Cassandra}}, {\large \faAreaChart,{Matplotlib Seaborn ggplot Plotly D3js Tableau \LaTeX}},
+{\large \faCogs,{git Travis AWS Unittest Flask Airflow Vertx}}}
+
+}
+
+\programmings{25/materialteal/\textbf{\textsf{R}},  25/materialcyan/\mfScala \textbf{ Scala}, 40/orange/ \ \mfPython \textbf{ Python}, 10/green/ \ \mfJavaBold \textbf{Java}}{2.25}{0.75}
+
+% Interest icons text
+\interests{ \textcolor{pblue}{\large \faBook \ \ \faMusic \ \ \faTv \ \ \faBicycle  \ \ \faGamepad \ \ \faAndroid \ \ \faLinux
+}}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{\VAR{first_name} \VAR{last_name}, Ph.D} % Your name
+\cvjobtitle{ Data Scientist \\ Machine Learning } % Job
+% title/career
+
+\cvbirthday{02/12/1984} \cvnatio{French} % Personal website
+\cvhome{Paris, Fr}  \cvnumberphone{+33 640958173} % Phone number
+\cvmail{johayon.math@gmail.com} % Email address
+\cvlinkedin{/in/johayonmath}
+\cvgithub{johayon}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}{\faAlignJustify}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{2018 - ...}
+	{Pr\'esent}
+         {Data Scientist R\&D}
+         {Air Liquide}
+        {}
+        {
+				\begin{itemize}
+				\item Predictive algorithm in HealthCare, importance of interpretability.
+				\item Exploratory subject on IOT potential with marketing database.
+				\item \textbf{outils}: Python, R,  git
+				\end{itemize} }\\
+
+\twentyitem
+    	{2016 - 2018}
+		{}
+        {Data Scientist}
+        {\href{http://www.holimetrix.ccom/}{Holimetrix}}
+        {}
+        {\vspace{-2mm}\begin{itemize}[topsep=0pt,partopsep=0pt]
+				\item  Website traffic and KPI attributions on TV/Radio ads.
+				\item Cross-Device Pairing across multiple websites.
+				\item Google like sessionization from terabytes of websites event logs.
+				\item Developed internal tools for routine tasks.
+				\item \textbf{tools}: Python, Scala, Spark, GraphX, AWS, Travis, git
+				\end{itemize}} \\
+				
+	\twentyitem
+    	{2016 - ...}
+		{}
+        {Data Scientist/Machine Learning Engineer}
+        {FreeLance}
+        {}
+        {\vspace{-2mm}\begin{itemize}[topsep=0pt,partopsep=0pt]
+        \item Scoring algorithm development for a machine learning saas solution.
+        \item Scoring models for targeted e-mail marketing campaigns. 
+        \item Statistical Analysis and predictive models for HealthCare client. 
+				\item \textbf{tools}: Python, R, jupyter, git, Unittest, Plotly
+    \end{itemize}} \\
+		
+    \twentyitem
+   		{2015 - 2016}
+		{}
+        {Data Scientist/Machine Learning Engineer}
+        {\href{http://www.cetadata.com/}{CetaData}}
+        {}
+        {\vspace{-2mm}\begin{itemize}[topsep=0pt,partopsep=0pt]
+				\item Development of a scoring algorithm on a saas solution.
+        \item Predictive model of speed limitation on road chunks.
+				\item \textbf{tools}: C++, Python, Sklearn, StatsModels, Seaborn
+    \end{itemize}} \\
+		
+     \twentyitem
+   		{2015 - 2015}
+		{}
+        {Data Scientist}
+        {\href{http://www.keyrus.com/}{Keyrus}}
+        {}
+        {
+        \vspace{-2mm}\begin{itemize}[topsep=0pt,partopsep=0pt]
+        \item Development of a machine-learning platform as a service on AWS. 
+				\item Recommendation system on spark with MLlib.
+				\item \textbf{tools}: Spark, MLlib, Hbase, Cassandra
+    \end{itemize} } \\
+		
+	\twentyitem
+   		{2011 - 2013}
+		{}
+        {Research and Teaching Assistant}
+        {\href{http://www.univ-lyon1.fr/}{University Lyon I/ Montpellier II}}
+        {}
+        {} 
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-0.25cm}
+\section{Education}{\faGraduationCap}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitemshorttest
+    	{2014 - 2015}
+        {}
+        {Adv. MSc., Big data/Machine Learning}
+        {Telecom ParisTech}
+        {with Honor}
+				
+	\twentyitemshorttest
+    	{2008 - 2012}
+		{}
+        {Ph.D in Mathematics}
+        {\href{http://www.umontpellier.fr/}{University of Montpellier II}}
+        {}
+				
+	\twentyitemshorttest
+    	{2006 - 2008}
+		{}
+        {MSc. in Mathematics and Statistics}
+        {\href{http://www.umontpellier.fr/}{University of Montpellier II}}
+        {Major in Mathematics, with Honor}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Projects - Research}{\faClipboard}
+\begin{twenty}
+	\twentyitem
+			{2018 - ...}
+			{Pr\'esent}
+			{Contribution Open source Scikit-Learn}
+			{Github - sklearn}
+			{}
+			{}
+	\twentyitem
+			{2015 - ...}
+			{Present}
+			{Data Science, Machine Learning Challenge}
+			{Kaggle - DataScience}
+			{}
+			{\vspace{-2mm}\begin{itemize}[topsep=0pt,partopsep=0pt]
+			 \item Quora - Cdiscount - Avito - Human or Robot - SpringLeaf
+			 \item \textbf{tools}: Python, Xgboost, TensorFlow, Keras, NLTK, gensim
+			\end{itemize}} \\
+			
+	\twentyitem
+    	{2014 - 2015}
+		{}
+        {Adv. MSc. Project: Scalable recommender system}
+        {Yuzu}
+        {}
+        {\vspace{-2mm}\begin{itemize}[topsep=0pt,partopsep=0pt]
+        \item Development of a recommender system for coupons on websites.
+				\item Cross-validation of the system using the temporal structure of the data.
+        \item \textbf{tools}: Spark, MLlib, Zeppelin, Elastic-Search
+		\end{itemize}} \\
+		
+	\twentyitem
+			{2008 - 2012}
+			{}
+			{Ph.D thesis}
+			{\href{http://www.umontpellier.fr/}{University of Montpellier II}}
+			{}
+			{\vspace{-2mm}\begin{itemize}[topsep=0pt,partopsep=0pt]
+			\item \textbf{thesis}: Quantization/Deformation of co-isotropic Lie Sub-algebra
+			\item \textbf{keywords}: Quantum Groups, Quantization, Properads, Lie Bialgebra
+			\end{itemize}}
+\end{twenty}
+\end{document} 

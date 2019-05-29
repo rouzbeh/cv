@@ -1,0 +1,134 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic} % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage[utf8]{inputenc} %% les accents dans le fichier.tex
+\usepackage{csquotes}
+\usepackage[\VAR{language}]{babel}
+\usepackage[scale=0.78]{geometry} \usepackage{etoolbox}
+\patchcmd{\section}{\vspace*{4ex}}{\vspace{4ex}}{}{}
+\usepackage[autolang=other,backend=biber,dashed=false,sorting=none,maxbibnames=10,bibstyle=authoryear,url=false,doi=false,isbn=false]{biblatex}
+\bibliography{publications}
+\DefineBibliographyStrings{\VAR{language}}{pages = {pp\adddot}}
+% Define \cvdoublecolumn, which sets its arguments in two columns without any labels
+
+\newcommand{\cvtriplecolumn}[3]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{0.3\linewidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{0.3\linewidth}#2\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{0.3\linewidth}#3\end{minipage}%
+    }%
+}
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+\DeclareNameFormat{last-first-fb}{%
+  \ifnumequal{\value{listcount}}{1}
+    {\renewcommand*{\mkbibnamelast}[1]{\mkbibbold{##1}}}
+    {\renewcommand*{\mkbibnamelast}[1]{##1}}%
+  \ifnumequal{\value{listcount}}{1}
+    {\renewcommand*{\mkbibnamefirst}[1]{\mkbibbold{##1}}}
+    {\renewcommand*{\mkbibnamefirst}[1]{##1}}}%
+%  \iffirstinits
+%    {\usebibmacro{name:last-first}{#1}{#4}{#5}{#7}}
+%    {\usebibmacro{name:last-first}{#1}{#3}{#5}{#7}}
+%    \usebibmacro{name:andothers}}
+
+\DeclareNameAlias{sortname}{last-first-fb}
+
+% Remove letters from years in bibliography
+\defbibenvironment{nodis}
+  {\list
+     {}
+     {\setlength{\leftmargin}{\bibhang}%
+      \setlength{\itemindent}{-\leftmargin}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\clearfield{extrayear}\item}
+
+\nopagenumbers
+\AtEveryBibitem{\clearfield{month}}
+% personal data
+\name{\VAR{first_name}}{\VAR{last_name}}
+\title{\VAR{title}}
+%\address{9 rue Crespin du Gast}{75011 Paris}{France}
+%\phone[mobile]{\VAR{contact.phone}}   % optional, remove / comment the line if not wanted;
+\email{\VAR{contact.mail}} % optional, remove / comment the line if not wanted
+\homepage{\VAR{contact.homepage}}         % optional, remove / comment the line if not wanted
+\social[linkedin]{\VAR{contact.linkedin}}      % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                 % optional, remove / comment the line if not wanted
+\social[github]{\VAR{contact.github}}               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}     % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}          % optional, remove / comment the line if not wanted;
+% '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame
+% around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}
+
+\begin{document}
+\makecvtitle
+
+\section{\VAR{experience.title}}
+\BLOCK{ for x in experience.list }
+\cventry{\VAR{x.period}}{\VAR{x.title}}{\VAR{x.company}}{\VAR{x.location}}{}{\VAR{x.description}}
+\BLOCK{ endfor }
+
+\BLOCK{ if teaching is defined }
+\section{\VAR{teaching.title}}
+\BLOCK{ for x in teaching.list }
+\cventry{\VAR{x.period}}{\VAR{x.title}}{\VAR{x.description}}{}{}{}
+\BLOCK{endfor}
+\BLOCK{ endif }
+
+\BLOCK{ if publications is defined }
+\begin{refsection}
+\BLOCK{ for x in publications }
+\nocite{\VAR{x.key}}
+\BLOCK{ endfor }
+\printbibliography[env=nodis,title={\VAR{publications.title}}]
+\end{refsection}
+\BLOCK{ endif }
+
+\BLOCK{ if conferences is defined }
+\begin{refsection}
+  \BLOCK{ for x in conferences }
+  \nocite{\VAR{x.key}}
+  \BLOCK{ endfor }
+\printbibliography[env=nodis,title={\VAR{conferences.title}}]
+\end{refsection}
+\BLOCK{endif}
+
+\BLOCK{ if peer_review is defined }
+\section{\emph \VAR{peer_review.title}}
+\BLOCK{ for x in peer_review }
+\cvitemwithcomment{\VAR{x.title}}{}{\VAR{x.description}}
+\BLOCK{ endfor }
+\BLOCK{ endif }
+
+\section{\VAR{education.title}}
+\BLOCK{ for x in education.list }
+\cventry{\VAR{x.period}}{\VAR{x.title}}{\VAR{x.company}}{\VAR{x.location}}{}{\VAR{x.description}} 
+\BLOCK{ endfor }
+
+\BLOCK{ if research_related is defined }
+\section{\VAR{research_related.title}}
+\BLOCK{ for x in research_related.list }
+\cvitem{\VAR{x.title}}{\VAR{x.description}}
+\BLOCK{ endfor }
+\BLOCK{ endif }
+
+\section{\VAR{skills.title}}
+\BLOCK{ for x in skills.list }
+\cvlistitem{\VAR{x.description}}
+\BLOCK{ endfor }
+\end{document}

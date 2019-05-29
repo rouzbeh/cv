@@ -1,0 +1,19 @@
+title: Enseignement et charge de travaux dirigés
+list:
+  -
+    title: Machine learning and neural computation
+    period: 2010--2013
+    description: |-
+      Cours de Master, department of Computing, Imperial College London, UK
+  -
+    title: Modelling in biology
+    period: 2011--2013
+    description: |-
+      Cours de troisième année, department of Bioengineering, Imperial College
+      London, UK
+  -
+    title: Python for scientists
+    period: 2013
+    description: |-
+      Cours de Master,  department of Bioengineering, Imperial College
+      London, UK
