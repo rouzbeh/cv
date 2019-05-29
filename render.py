@@ -17,7 +17,7 @@ class Loader(yaml.Loader):
 
         filename = os.path.join(self._root, self.construct_scalar(node))
 
-        with open(filename, 'r', encoding='utf8') as f:
+        with io.open(filename, 'r', encoding='utf8') as f:
             return yaml.load(f, Loader)
 
 Loader.add_constructor('!include', Loader.include)
