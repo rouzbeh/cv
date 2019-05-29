@@ -25,5 +25,7 @@ generated/%.pdf: generated/%.tex
 	$(LATEX) $<
 	$(LATEX) $<
 	$(CP) $(call FixPath,.build/$(notdir $@)) $@
+	
+all_tex: $(TEX_FILES)
 
 all: $(PDF_FILES)
