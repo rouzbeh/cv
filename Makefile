@@ -11,7 +11,8 @@ ifdef OS
 else
 	ifeq ($(shell uname), Linux)
 		RM = rm -f
-    FixPath = $1
+		FixPath = $1
+		CP = cp
 	endif
 endif
 
@@ -25,7 +26,7 @@ generated/%.pdf: generated/%.tex
 	$(LATEX) $<
 	$(LATEX) $<
 	$(CP) $(call FixPath,.build/$(notdir $@)) $@
-	
+
 all_tex: $(TEX_FILES)
 
 all: $(PDF_FILES)
