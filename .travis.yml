@@ -3,6 +3,6 @@ dist: trust
 before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
 install:
-  - pip install -r requirements.txt
+  - pip install --user -r requirements.txt
 script:
   - make all
