@@ -1,4 +1,4 @@
-LATEX = xelatex -output-directory .build
+LATEX = xelatex -aux-directory .build -output-directory generated
 YML_FILES := $(wildcard data/*.yml)
 COMMON_FILES := $(wildcard data/common/*.yml)
 TEX_FILES := $(addprefix generated/,$(notdir $(YML_FILES:.yml=.tex)))
@@ -25,7 +25,6 @@ generated/%.tex: $(call FixPath,data/%.yml) latex/template.tex $(COMMON_FILES)
 generated/%.pdf: generated/%.tex
 	$(LATEX) $<
 	$(LATEX) $<
-	$(CP) $(call FixPath,.build/$(notdir $@)) $@
 
 all_tex: $(TEX_FILES)
 

@@ -2,7 +2,7 @@
 language: english
 first_name: Ali
 last_name: Neishabouri
-title: "Data scientist, PhD, Engineer"
+title: "Data scientist, Neuroscientist, Engineer"
 contact: !include common/contact.yml
 languages: 
   title: Languages
@@ -48,6 +48,11 @@ teaching:
         Master level class in the department of Bioengineering, Imperial College
         London, UK
 experience: !include common/experience_en.yml
+publications:
+    list:
+        - Neishabouri2014
+        - Neishabouri2014a
+    title: Publications
 research_related: !include common/research_related_en.yml
 other: 
   title: Other

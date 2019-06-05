@@ -92,8 +92,8 @@
 
 \BLOCK{ if publications is defined }
 \begin{refsection}
-\BLOCK{ for x in publications }
-\nocite{\VAR{x.key}}
+\BLOCK{ for x in publications.list }
+\nocite{\VAR{x}}
 \BLOCK{ endfor }
 \printbibliography[env=nodis,title={\VAR{publications.title}}]
 \end{refsection}
