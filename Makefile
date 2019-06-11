@@ -1,4 +1,3 @@
-LATEX = xelatex -aux-directory .build -output-directory generated
 YML_FILES := $(wildcard data/*.yml)
 COMMON_FILES := $(wildcard data/common/*.yml)
 TEX_FILES := $(addprefix generated/,$(notdir $(YML_FILES:.yml=.tex)))
@@ -8,11 +7,13 @@ ifdef OS
 	RM = del /Q
 	CP = copy
 	FixPath = $(subst /,\,$1)
+	LATEX = xelatex -aux-directory .build -output-directory generated
 else
 	ifeq ($(shell uname), Linux)
 		RM = rm -f
 		FixPath = $1
 		CP = cp
+		LATEX = xelatex -output-directory generated
 	endif
 endif
 
