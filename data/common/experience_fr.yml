@@ -1,7 +1,18 @@
 title: Expérience professionnelle
 list:
   -
-    period: 2017--présent
+    period: Depuis Sep 2019
+    title: Ingénieur de recherche en Mathématiques appliqués
+    company: Mipsology
+    location: Paris, France
+    description: |-
+      Dans l'équipe Mathématiques, je suis en charge de l'intégrations de 
+      nouvelles couches et de la recherche d'optimisations pour exécuter des 
+      Réseaux de neurones convolutifs sur Zebra, la plateforme de Mipsology 
+      basée sur des FPGA.
+      
+  -
+    period: 2017--Sep 2019
     title: Consultant en Data Science
     company: Freelance
     location: Paris, France
