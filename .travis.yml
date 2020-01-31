@@ -1,5 +1,7 @@
 lsudo: required
 dist: trust
+python:
+  - "3.7"
 before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
 install:
