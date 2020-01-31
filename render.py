@@ -56,7 +56,7 @@ def main(datafile):
         out_name = os.path.splitext(os.path.basename(datafile))[0] + ".tex"
         data = yaml.load(inputfile, Loader)
         output_name = os.path.join(generated, out_name)
-        with io.open(output_name, 'w', encoding="utf8") as outfile:
+        with open(output_name, 'w') as outfile:
             outfile.write(template.render(data))
 
 #shutil.copy2(out_file+".pdf", os.path.dirname(os.path.realpath(in_file)))
