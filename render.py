@@ -1,5 +1,6 @@
 import jinja2
 import os
+import codecs
 from sys import argv
 from jinja2 import Template
 import yaml
@@ -56,14 +57,8 @@ def main(datafile):
         out_name = os.path.splitext(os.path.basename(datafile))[0] + ".tex"
         data = yaml.load(inputfile, Loader)
         output_name = os.path.join(generated, out_name)
-        with open(output_name, 'w') as outfile:
+        with codecs.open(output_name, 'w', "utf-8") as outfile:
             outfile.write(template.render(data))
-
-#shutil.copy2(out_file+".pdf", os.path.dirname(os.path.realpath(in_file)))
-
-
-#with open(out_file+".tex", "w") as f:  # saves tex_code to output file
-#    f.write(tex_code)
 
 if __name__ == "__main__":
     main(datafile=argv[1])
