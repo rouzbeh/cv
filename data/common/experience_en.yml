@@ -1,6 +1,24 @@
 title: Professional experience
 list:
   -
+    period: since Sep 2019
+    title: Research Engineer
+    company: Mipsology
+    location: Paris, France
+    description: |-
+     As a member of the mathematics department, I work on integrating new networks into
+     Mipsology's deep learning acceleration platform. I have worked on various CNNs
+     (Shufflenet, MobilenetV3, Sr-Resnet, ...), and added support for tensorflow-lite. I have also
+     implemented a fine-tuning system for neural network quantisation based on distillation.
+  -
+    period: Jan-Sep 2019
+    title: Data Science Consultant
+    company: SNCF
+    location: Paris, France
+    description: |-
+     Implement an automated train regulation system for \emph{Transilien},
+     Paris's regional train network.
+  -
     period: Jul-Dec 2018
     title: Data Science Consultant
     company: Medicall

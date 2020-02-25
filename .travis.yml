@@ -1,5 +1,5 @@
 lsudo: required
-dist: trust
+dist: bionic
 python:
   - "3.7"
 before_install:
