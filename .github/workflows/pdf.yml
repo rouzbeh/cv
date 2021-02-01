@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  install:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -27,12 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup TeXLive
-        # You may pin to the exact commit or the version.
-        # uses: DanySK/setup-texlive-action@b4f16caf4d95d2965c52db113d3f56c46fb82a91
-        uses: DanySK/setup-texlive-action@0.1.1
+        run: sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
         
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      # Installs required python packages
+      - name: Python requirments
+        run: pip install --user -r requirements.txt
+        
+      - name: Make
+        run: make all
