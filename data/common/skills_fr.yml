@@ -2,7 +2,10 @@ title: Compétences
 list:
   -
       description: |-
-        Analyse de données, visualisation, et machine learning
+        Data Science, Machine/Deep Learning
+  -
+      description: |-
+        Data Engineering, Data pipelines, Data analysis platforms
   -
       description: |-
         Expertise en mathématiques, physique et informatique

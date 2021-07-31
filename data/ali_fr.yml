@@ -2,7 +2,7 @@
 language: french
 first_name: Ali
 last_name: Neishabouri, PhD
-title: Ing\'enieur, Data Scientist
+title: "Head of Data (Science/Engineering)"
 contact: !include common/contact.yml
 languages:
   title: Langues

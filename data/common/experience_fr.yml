@@ -1,7 +1,25 @@
 title: Expérience professionnelle
 list:
   -
-    period: Depuis Sep 2019
+    period: Depuis Juillet 2020
+    title: Senior Manager, Head of Data Science, Konectom
+    company: Biogen
+    location: Paris, France
+    description: |-
+      En tant que Head of Data Science, je suis responsable de la bonne collecte et analyse des données
+      provenant de Konectom, une application mobile de collecte de données qui visent à révolutionner 
+      le suivi des maladies neurologiques. Parmi mes tâches:
+      \begin{itemize}
+        \item Mener une équipe de data scientists qui extraient des features à partir des données
+         collectées et les analysent.
+        \item Mener un projet d'envergure pour harmoniser les algorithmes d'analyse de posture 
+        à l'échelle de Biogen
+        \item Définir le cahier des charges de l'architecture de collecte et d'analyse des données
+        \item Initier et mener à bien les projets d'innovation (Estimation de pose, eye-tracking)
+        \item Venir en support des études cliniques
+      \end{itemize}
+  -
+    period: Sep 2019-Juillet 2020
     title: Ingénieur de recherche en Mathématiques appliqués
     company: Mipsology
     location: Paris, France

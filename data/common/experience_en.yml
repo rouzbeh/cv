@@ -1,7 +1,22 @@
 title: Professional experience
 list:
   -
-    period: since Sep 2019
+    period: Since July 2020
+    title: Senior Manager, Head of Data Science, Konectom
+    company: Biogen
+    location: Paris, France
+    description: |-
+      As the head of data science, I am responsible for all data related aspects of Konectom,
+      an app aiming to revolutionize the way we monitor neurological disorders. My tasks include:
+      \begin{itemize}
+        \item Leading a team of data scientists who extract features from raw sensor data and analyse them
+        \item Lead efforts to harmonize gait analysis algorithms across Biogen
+        \item Define requirements for the data pipeline and the analysis platform 
+        \item Champion and lead innovative projects (Video pose estimation, DNN based eye-tracking)
+        \item Support clinical studies (Data quality monitoring, compliance monitoring)
+      \end{itemize}
+  -
+    period: Sep 2019-July 2020
     title: Research Engineer
     company: Mipsology
     location: Paris, France
