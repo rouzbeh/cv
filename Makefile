@@ -14,6 +14,13 @@ else
 		FixPath = $1
 		CP = cp
 		LATEX = xelatex -output-directory generated
+    else
+	    ifeq ($(shell uname), Darwin)
+		    RM = rm -f
+		    FixPath = $1
+		    CP = cp
+		    LATEX = xelatex -output-directory generated
+		endif
 	endif
 endif
 
