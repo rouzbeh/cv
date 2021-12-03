@@ -1,7 +1,19 @@
 title: Professional experience
 list:
   -
-    period: Since July 2020
+    period: Since Nov 2021
+    title: Head of Data Science
+    company: Actigraph
+    location: Pensacola, Florida
+    description: |-
+      ActiGraph is the global research community’s trusted advisor and most experienced provider 
+      of medical-grade biometric monitoring technology solutions. Built on more than 20 years 
+      of real-world data capture expertise, ActiGraph’s wearable accelerometer-based biosensors 
+      and innovative technology platform deliver validated digital biomarker data and end-to-end
+      study support services for academic and pharmaceutical research.
+
+  -
+    period: July 2020-Nov 2021
     title: Senior Manager, Head of Data Science, Konectom
     company: Biogen
     location: Paris, France

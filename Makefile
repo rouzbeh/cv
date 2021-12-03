@@ -7,19 +7,19 @@ ifdef OS
 	RM = del /Q
 	CP = copy
 	FixPath = $(subst /,\,$1)
-	LATEX = xelatex -aux-directory .build -output-directory generated
+	LATEX = lualatex -aux-directory .build -output-directory generated
 else
 	ifeq ($(shell uname), Linux)
 		RM = rm -f
 		FixPath = $1
 		CP = cp
-		LATEX = xelatex -output-directory generated
+		LATEX = lualatex -output-directory generated
     else
 	    ifeq ($(shell uname), Darwin)
 		    RM = rm -f
 		    FixPath = $1
 		    CP = cp
-		    LATEX = xelatex -output-directory generated
+		    LATEX = lualatex -output-directory generated
 		endif
 	endif
 endif

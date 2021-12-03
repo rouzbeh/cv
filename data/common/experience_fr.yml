@@ -1,7 +1,16 @@
 title: Expérience professionnelle
 list:
   -
-    period: Depuis Juillet 2020
+    period: Depuis Nov 2021
+    title: Head of Data Science
+    company: Actigraph
+    location: Pensacola, Florida
+    description: |-
+      Actigraph fabrique et commercialise des capteurs de mouvement embarqués à destination des
+      chercheurs et des entreprises pharmaceutiques. L'équipe Data Science travaille sur des nouveaux 
+      algorithmes pour analyser ces données et les mettre à la disposition des chercheurs. 
+  -
+    period: Juillet 2020-Novembr 2021
     title: Senior Manager, Head of Data Science, Konectom
     company: Biogen
     location: Paris, France

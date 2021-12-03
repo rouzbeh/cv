@@ -9,7 +9,8 @@
 \usepackage[\VAR{language}]{babel}
 \usepackage[scale=0.78]{geometry} \usepackage{etoolbox}
 \patchcmd{\section}{\vspace*{4ex}}{\vspace{4ex}}{}{}
-\usepackage[autolang=other,backend=biber,dashed=false,sorting=none,maxbibnames=10,bibstyle=authoryear,url=false,doi=false,isbn=false]{biblatex}
+\usepackage[autolang=other,backend=biber,dashed=false,sorting=none,maxbibnames=10,%
+bibstyle=authoryear,url=false,doi=false,isbn=false]{biblatex}
 \bibliography{publications}
 \DefineBibliographyStrings{\VAR{language}}{pages = {pp\adddot}}
 % Define \cvdoublecolumn, which sets its arguments in two columns without any labels
@@ -32,30 +33,6 @@
     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
-\DeclareNameFormat{last-first-fb}{%
-  \ifnumequal{\value{listcount}}{1}
-    {\renewcommand*{\mkbibnamelast}[1]{\mkbibbold{##1}}}
-    {\renewcommand*{\mkbibnamelast}[1]{##1}}%
-  \ifnumequal{\value{listcount}}{1}
-    {\renewcommand*{\mkbibnamefirst}[1]{\mkbibbold{##1}}}
-    {\renewcommand*{\mkbibnamefirst}[1]{##1}}}%
-%  \iffirstinits
-%    {\usebibmacro{name:last-first}{#1}{#4}{#5}{#7}}
-%    {\usebibmacro{name:last-first}{#1}{#3}{#5}{#7}}
-%    \usebibmacro{name:andothers}}
-
-\DeclareNameAlias{sortname}{last-first-fb}
-
-% Remove letters from years in bibliography
-\defbibenvironment{nodis}
-  {\list
-     {}
-     {\setlength{\leftmargin}{\bibhang}%
-      \setlength{\itemindent}{-\leftmargin}%
-      \setlength{\itemsep}{\bibitemsep}%
-      \setlength{\parsep}{\bibparsep}}}
-  {\endlist}
-  {\clearfield{extrayear}\item}
 
 \nopagenumbers
 \AtEveryBibitem{\clearfield{month}}
@@ -92,7 +69,7 @@
 \BLOCK{ for x in publications.list }
 \nocite{\VAR{x}}
 \BLOCK{ endfor }
-\printbibliography[env=nodis,title={\VAR{publications.title}}]
+\printbibliography[title={\VAR{publications.title}}]
 \end{refsection}
 \BLOCK{ endif }
 
@@ -101,7 +78,7 @@
   \BLOCK{ for x in conferences }
   \nocite{\VAR{x.key}}
   \BLOCK{ endfor }
-\printbibliography[env=nodis,title={\VAR{conferences.title}}]
+\printbibliography[title={\VAR{conferences.title}}]
 \end{refsection}
 \BLOCK{endif}
 

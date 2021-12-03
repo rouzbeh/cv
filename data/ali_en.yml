@@ -50,6 +50,7 @@ teaching:
 experience: !include common/experience_en.yml
 publications:
     list:
+        - Neishabouri2011
         - Neishabouri2014
         - Neishabouri2014a
     title: Publications
