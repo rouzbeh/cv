@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[style=numeric,backend=biber,sorting=ynt]{biblatex}
+
+\addbibresource{publications.bib}
+
+\DeclareFieldFormat{abstract}{\par\small#1}
+\renewbibmacro*{finentry}{\printfield{abstract}\finentry}
+
+\begin{document}
+\begin{refsection}
+    \nocite{Neishabouri2011}
+    \nocite{Neishabouri2014}
+    \nocite{Neishabouri2014a}
+    \printbibliography[title=Publications]
+\end{refsection}
+
+
+\begin{refsection}
+    \nocite{Neishabouri2012a}
+    \nocite{Neishabouri2012b}
+    \nocite{Neishabouri2012}
+    \nocite{Neishabouri2012c}
+    \nocite{Neishabouri2013}
+    \nocite{Neishabouri2013a}
+    \nocite{Neishabouri2013b}
+    \nocite{NeishabouriCosyne2014}
+    % \nocite{NeishabouriFENS2014}
+    % \nocite{NeishabouriHBP2014}
+\printbibliography[title=Conferences]
+\end{refsection}
+
+\end{document}

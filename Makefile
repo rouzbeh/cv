@@ -36,4 +36,12 @@ generated/%.pdf: generated/%.tex
 
 all_tex: $(TEX_FILES)
 
-all: $(PDF_FILES)
+generated/bibliography.pdf: latex/bibliography.tex
+	lualatex  -output-directory generated latex/bibliography.tex
+	biber generated/bibliography
+	lualatex  -output-directory generated latex/bibliography.tex
+	lualatex  -output-directory generated latex/bibliography.tex
+
+bibliography: generated/bibliography.pdf
+
+all: $(PDF_FILES) bibliography
